@@ -12,7 +12,7 @@
   
   <div class="header">
 
-  <a class="header-items" href="home.php"> <img src="images/DoctorLogo.png"  height="100px" alt="Doctor" class="header-items"> </a>
+  <a class="header-items" href="index.php"> <img src="images/DoctorLogo.png"  height="100px" alt="Doctor" class="header-items"> </a>
   <b><a class="header-items" href="doctors.php">Check Doctors</a> </b>
   <b><a class="header-items" href="medicine.php">Medicine</a> </b>
   <b><a class="header-items" href="Doctorconsult.php"> Doctor Consults</a></b>
