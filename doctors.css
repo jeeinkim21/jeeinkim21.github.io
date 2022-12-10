@@ -1,0 +1,270 @@
+.header{
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: normal;
+    width:100%; 
+    background-color: #93A3BC;
+    color: #594236;
+}
+
+.header-items:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+  
+.header-items:nth-child(2) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+  
+.header-items:nth-child(3) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+  
+.header-items:nth-child(4) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
+#DocMessage{
+    margin-top: 40px;
+    border-radius: 50px;
+}
+
+.Doctors {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: stretch;
+  }
+  
+  .doctor:nth-child(1) { 
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+  
+  .doctor:nth-child(2) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+  
+  .doctor:nth-child(3) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+  
+  .doctor:nth-child(4) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+  
+  .doctor:nth-child(5) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+
+  
+    
+
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+    background-color: #48ACf0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+a{
+    color: #594236;
+}
+
+a:link {
+    text-decoration: none;
+}
+  
+a:visited {
+    text-decoration: none;
+}
+  
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 30%;
+    background-color: aliceblue;
+    border-radius: 5px; /* 5px rounded corners */
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
+
+  img {
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .product-review-stars{
+ 
+    padding: 20px 50px 20px 20px;
+  }
+  
+  .product-review-stars label{
+      text-shadow: 0px 0px 10px black;
+  }
+  
+  /*end decoration*/
+  
+  .visuallyhidden{
+    position: absolute !important; clip: rect(1px 1px 1px 1px); clip: rect(1px, 1px, 1px, 1px);
+  }
+  .product-review-stars label:after{
+      content: "★";
+      color: inherit;
+      -webkit-transform: scale(4);
+      position: absolute;
+      z-index: 4;
+      left: 0px;
+      transition: all .4s;
+      opacity: 0;
+      color: inherit;
+      visibility: hidden;
+     
+  }
+  
+  .product-review-stars input:checked + label:after{
+      visibility: visible;
+      -webkit-transform: scale(1);
+      opacity: 1;
+  }
+  
+  .product-review-stars  {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    width:  100%;
+  }
+  
+  .product-review-stars label{
+      font-family: "icomoon";
+      font-size: 2em;
+      position: relative;
+      cursor: pointer;
+      color: #DFE3E4;
+  }
+  .product-review-stars input:checked ~ label:before{
+      opacity: 1;
+  }
+  .product-review-stars:hover input ~ label:before{
+      opacity: 0;
+  }
+  
+  .product-review-stars input + label:before{
+      content: "\2605";
+      position: absolute;
+      right: 0;
+      opacity: 0;
+      transition: opacity .3s ease-in-out, color .3s ease-in-out;
+      backface-visibility:hidden;
+      -webkit-backface-visibility:hidden; /* Chrome and Safari */
+      -moz-backface-visibility:hidden; /* Firefox */
+      -ms-backface-visibility:hidden; /* Internet Explorer */
+  }
+  .product-review-stars input + label:hover:before,
+  .product-review-stars input + label:hover ~ label:before
+  {
+      opacity: 1;
+  }
+  .product-review-stars input + label:nth-of-type(1):after,
+  .product-review-stars input + label:nth-of-type(1):before,
+  .product-review-stars input +  label:nth-of-type(1):hover:before,
+  .product-review-stars input + label:nth-of-type(1):hover ~ label:before,
+  .product-review-stars input:nth-of-type(1):checked ~ label:before{
+      color: #2ecc71;
+  }
+  .product-review-stars input + label:nth-of-type(2):after,
+  .product-review-stars input + label:nth-of-type(2):before,
+  .product-review-stars input + label:nth-of-type(2):hover:before,
+  .product-review-stars input + label:nth-of-type(2):hover ~ label:before,
+  .product-review-stars input:nth-of-type(2):checked ~ label:before{
+      color: #f1c40f;
+  }
+  .product-review-stars input + label:nth-of-type(3):after,
+  .product-review-stars input + label:nth-of-type(3):before,
+  .product-review-stars input + label:nth-of-type(3):hover:before,
+  .product-review-stars input + label:nth-of-type(3):hover ~ label:before,
+  .product-review-stars input:nth-of-type(3):checked ~ label:before{
+      color: #F39C12;
+  }
+  .product-review-stars input + label:nth-of-type(4):after,
+  .product-review-stars input + label:nth-of-type(4):before,
+  .product-review-stars input + label:nth-of-type(4):hover:before,
+  .product-review-stars input + label:nth-of-type(4):hover ~ label:before,
+  .product-review-stars input:nth-of-type(4):checked ~ label:before{
+      color: #e74c3c;
+  }
+  
+  .product-review-stars input + label:nth-of-type(5):after,
+  .product-review-stars input + label:nth-of-type(5):before,
+  .product-review-stars label:nth-of-type(5):hover:before,
+  .product-review-stars input:nth-of-type(5):checked ~ label:before{
+      color: #d35400;
+  }
+  
+  .product-review-stars label:nth-of-type(5):hover:before{
+      color: #d35400 !important;
+  }
