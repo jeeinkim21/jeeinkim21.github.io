@@ -1,3 +1,6 @@
+
+   
+
 <?php
 $link = mysqli_connect('127.0.0.1', 'root', 'nC5oAcW1');
 if (!$link) {
@@ -13,6 +16,13 @@ from Prescription p, Doctor d
 where p.prescribedBy = d.doctorId; ";
 
 $result = mysqli_query($link,$sql);
+
+$cmd = $s3Client->getCommand('GetObject', [
+        'Bucket' => $bucket_name,
+        'Key' => $filename,
+        'ResponseContentType' =>  get_mime_type($filename),
+        'ResponseContentDisposition' => 'inline; filename='.$user_filename
+    ]);
 
 while ($row = mysqli_fetch_assoc($result))
 {
